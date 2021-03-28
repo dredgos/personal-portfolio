@@ -21,12 +21,6 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Template Name: Instant
-    Template URL: https://templatemag.com/instant-bootstrap-personal-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
 </head>
 
 <body>
@@ -47,8 +41,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="works.html" class="smoothscroll">Works</a></li>
-          <li><a href="contact.html" class="smoothscroll">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <!--/.nav-collapse -->
@@ -75,8 +69,8 @@
         <img class="col-lg-4 profileimg" src="img/paul.jpg" alt="profile picture" />
         <div class="col-lg-6 col-lg-offset-2">
           <h2>About Me</h2>
-          <p>Hi, Im Paul, an aspiring web developer based in Wiltshire. Previously I worked for the government for over a decade, but now I make stuff using web technologies.</p>
-          <p>My spare time is spent outdoors either on the bike, walking with my amazing dog or playing some video games.</p>
+          <p>Hi, Im Paul, an aspiring web developer based in Wiltshire. Previously I worked for the government for over a decade, but now I make things using web technologies.</p>
+          <p>My spare time is spent outdoors either on the bike, walking with my dog or playing some video games.</p>
           <h3>Skills</h3>
           <div class="col-lg-12 d-flex align-items-between ">
             <ul class="list-group col-lg-6 custom-list">
@@ -91,7 +85,7 @@
               <li class="list-group-item">Laravel</li>
               <li class="list-group-item">Blade</li>
               <li class="list-group-item">MySQL</li>
-              <li class="list-group-item">APIs</li>
+              <li class="list-group-item">RESTful APIs</li>
             </ul>
           </div>
         </div>
@@ -99,21 +93,30 @@
     </div>
   </section>
 
-  <section id="works">
+  <section id="projects">
     <div class="container">
       <div class="row centered mt mb">
         <h1>My Portfolio</h1>
 
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-          <a href="works.html"><img src="img/portfolio/folio01.png" class="img-responsive"></a>
+          <a href="https://paul.developme.space"><img src="img/portfolio/folio01.png" alt="project thumbnail" class="img-responsive"></a>
+          <h4>Photography Portfolio</h4>
+          <p>HTML & CSS</p>
+          <p><a href="https://github.com/dredgos/photography-portfolio-project">View Code</a></p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-          <a href="works.html"><img src="img/portfolio/folio02.png" class="img-responsive"></a>
+          <a href="https://lottiejen.github.io/group-project-frontend/#/"><img src="img/portfolio/folio02.png" alt="project thumbnail" class="img-responsive"></a>
+          <h4>Board Game Finder</h4>
+          <p>Laravel, API, React & Redux</p>
+          <p><a href="https://github.com/lottiejen/group-project-frontend">View Code</a></p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-          <a href="works.html"><img src="img/portfolio/folio03.png" class="img-responsive"></a>
+          <a href="https://github.com/dredgos/laravel_vet_app"><img src="img/portfolio/folio03.png" alt="project thumbnail" class="img-responsive"></a>
+          <h4>Vet Administration App</h4>
+          <p>Laravel, Blade & API</p>
+          <p><a href="https://github.com/dredgos/laravel_vet_app">View Code</a></p>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <!-- <div class="col-lg-4 col-md-4 col-sm-4 gallery">
           <a href="works.html"><img src="img/portfolio/folio04.png" class="img-responsive"></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
@@ -121,6 +124,46 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
           <a href="works.html"><img src="img/portfolio/folio06.png" class="img-responsive"></a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="centered">Contact Form</h2>
+
+          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-group">
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+
+          </form>
         </div>
       </div>
     </div>
@@ -138,14 +181,13 @@
         <div class="col-lg-4">
           <a href="https://github.com/dredgos"><i class="fa fa-github"></i></a>
         </div>
-
       </div>
     </div>
   </div>
 
   <div id="copyrights">
     <div class="container">
-      <p>Paul Dredge - 2021 </p>
+      <p>Copyright &copy; 2021 </p>
     </div>
   </div>
 
