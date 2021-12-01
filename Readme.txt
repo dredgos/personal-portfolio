@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+# Personal Portfolio
 
-Template Name: Instant
-Template URL: https://templatemag.com/instant-bootstrap-personal-template/
-Author: TemplateMag.com
-License: https://templatemag.com/license/
+A place to store and show my projects.
+
+## To Do:
+1. Fix image scaling and alignment below 768px
